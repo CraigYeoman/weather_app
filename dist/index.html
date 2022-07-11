@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script defer src="main.js"></script>
+    <script defer src="../src/index.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="content">
+        <div class="form-header">Enter Location</div>
         <form>
             <label for="City">
             City
@@ -17,6 +18,15 @@
             <button id="button" type="button">Submit</button>
             </label>
         </form>
+        <div class="weather" data-description></div>
+        <div class="weather" data-temp></div>
+        <div class="weather" data-feels-like></div>
+        <div class="weather" data-min></div>
+        <div class="weather" data-max></div>
+        <div class="weather" data-pressure></div>
+        <div class="weather" data-humidity></div>
+        <div class="weather" data-wind></div>
+        <div class="weather" data-visibilty></div>
     </div>
 </body>
 </html>
