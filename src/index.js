@@ -1,7 +1,5 @@
 const cityButton = document.getElementById("button");
 
-
-
 function getCity() {
   const city = document.getElementById("city");
   const location = city.value;
@@ -25,28 +23,22 @@ function displayData(dataWeather) {
 const weatherDescription = document.querySelector("[data-description]");
 const weatherTemp = document.querySelector("[data-temp]");
 const weatherTempFeel = document.querySelector("[data-feels-like");
-const weatherMin = document.querySelector("[data-min]");
-const weatherMax = document.querySelector("[data-max]");
 const weatherPressure = document.querySelector("[data-pressure]");
 const weatherHumidity = document.querySelector("[data-humidity]");
 const weatherWind = document.querySelector("[data-wind]");
-const weatherVisibility = document.querySelector("[data-visibilty]");
 
-weatherDescription.textContent = dataWeather.weather.description;
+weatherDescription.textContent = dataWeather.weather[0].main;
 weatherTemp.textContent = dataWeather.main.temp
 weatherTempFeel.textContent = dataWeather.main.feels_like;
-weatherMin.textContent = dataWeather.main.temp_min;
-weatherMax.textContent = dataWeather.main.temp_max;
 weatherPressure.textContent = dataWeather.main.pressure;
 weatherHumidity.textContent = dataWeather.main.humidity;
 weatherWind.textContent = dataWeather.wind.speed;
-weatherVisibility.textContent = dataWeather.visibilty;
 }
 
 function init() {
-  cityButton.addEventListener("click", () => {
+  cityButton.addEventListener("click", async () => {
     const location = getCity();
-    const dataWeather = getWeather(location);
+    const dataWeather = await getWeather(location);
     displayData(dataWeather);
   });
 }
