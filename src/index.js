@@ -27,7 +27,7 @@ const weatherPressure = document.querySelector("[data-pressure]");
 const weatherHumidity = document.querySelector("[data-humidity]");
 const weatherWind = document.querySelector("[data-wind]");
 
-weatherDescription.textContent = dataWeather.weather[0].main;
+weatherDescription.textContent = dataWeather.weather[0].description;
 weatherTemp.textContent = dataWeather.main.temp
 weatherTempFeel.textContent = dataWeather.main.feels_like;
 weatherPressure.textContent = dataWeather.main.pressure;

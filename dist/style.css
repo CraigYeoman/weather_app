@@ -1,0 +1,58 @@
+
+
+body {
+    background: #00aef2;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    background-color: rgba(6, 8, 19, 0.45);
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.main-details {
+    display: grid;
+    grid-template-rows: 60px 30px 40px;
+    align-items: center;
+}
+
+.details {
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-container {
+    display: grid;
+    height: 25px;
+    margin-top: 5px;
+
+}
+
+.weather {
+    margin-top: 5px;
+}
+
+div[data-location] {
+    font-size: 30px;
+}
+
+div[data-description] {
+    font-size: 20px;
+}
+
+div[data-temp] {
+    font-size: 40px;
+}
