@@ -4,10 +4,14 @@ body {
     background: #00aef2;
     color: #ffffff;
     font-weight: 700;
+    display: grid;
+    justify-items: center;
+    text-align: center;
 }
 
 .content {
     display: grid;
+    width: 360px;
     justify-content: center;
     background-color: rgba(6, 8, 19, 0.45);
     border-radius: 40px;
@@ -23,8 +27,10 @@ body {
 
 .main-details {
     display: grid;
-    grid-template-rows: 60px 30px 40px;
+    grid-template-rows: 45px 30px 40px;
     align-items: center;
+    gap: 15px;
+    margin-top: 10px;
 }
 
 .details {

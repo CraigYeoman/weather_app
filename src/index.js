@@ -28,9 +28,9 @@ const weatherHumidity = document.querySelector("[data-humidity]");
 const weatherWind = document.querySelector("[data-wind]");
 
 weatherDescription.textContent = dataWeather.weather[0].description;
-weatherTemp.textContent = dataWeather.main.temp
-weatherTempFeel.textContent = dataWeather.main.feels_like;
-weatherPressure.textContent = dataWeather.main.pressure;
+weatherTemp.textContent = `${dataWeather.main.temp} F°`
+weatherTempFeel.textContent = `${dataWeather.main.feels_like} F°`;
+weatherPressure.textContent = `${dataWeather.main.pressure} hPA`;
 weatherHumidity.textContent = dataWeather.main.humidity;
 weatherWind.textContent = dataWeather.wind.speed;
 }
