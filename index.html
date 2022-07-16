@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="form-header">Enter Location</div>
+        <form>
+            <label for="City">
+            City
+            <input id="city" name="city">
+            <button id="button" type="button">Submit</button>
+            </label>
+        </form>
+        <div class="info">
+            <div class="main-details">
+                    <div class="weather" data-location>Joplin, US</div>
+                    <div class="weather" data-description>Clear Sky</div>
+                    <div class="weather" data-temp>68</div>
+            </div>
+            <div class="bar"></div>
+            <div class="details">    
+                <div class="detail-container"> Feels Like
+                    <div class="weather" data-feels-like></div>
+                </div>
+                <div class="detail-container"> Pressure
+                    <div class="weather" data-pressure></div>
+                </div>
+                <div class="detail-container"> Humidity
+                    <div class="weather" data-humidity></div>
+                </div>
+                <div class="detail-container">Wind
+                    <div class="weather" data-wind></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
