@@ -9,7 +9,7 @@ function getCity() {
 async function getWeather(location) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=d24c0168a5997c2a5fcf4b4c6671cd55&units=imperial`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=d24c0168a5997c2a5fcf4b4c6671cd55&units=imperial`,
       { mode: "cors" }
     );
     const dataWeather = await response.json();
